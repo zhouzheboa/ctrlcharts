@@ -37,8 +37,8 @@ var
 //			}],
 			 //遥控端识别  是 swipeLeft /swipeRight  ,发送给客户端，客户端执行
 			
-		    wsServerUrl: 'ws://www.iyouwei.com.cn:8090/ete/wsServlet', //webservice服务地址
-		    QRcodeServerUtl :'http://www.iyouwei.com.cn:8090/ete/barcode'  //webservice二维码服务地址
+		    wsServerUrl: 'ws://www.iyouwei.com.cn:8090/ctrlcharts/wsServlet', //webservice服务地址
+		    QRcodeServerUtl :'http://www.iyouwei.com.cn:8090/ctrlcharts/barcode'  //webservice二维码服务地址
 	},
 	ete_guid = null,
 	ctrlUrl = window.location.href,
@@ -204,9 +204,13 @@ var
 		}, false);
 		document.addEventListener("touchend", function(evt){
 			if(myTouchStartX < myTouchEndX){
-				afterEvent(document,'swipeLeft');
+				if((myTouchEndX - myTouchStartX) >100){
+					afterEvent(document,'swipeLeft');
+				}
 			}else{
-				afterEvent(document,'swipeRight');
+				if((myTouchStartX - myTouchEndX) >100){
+					afterEvent(document,'swipeRight');
+				}
 			}
 		}, false);
 		
