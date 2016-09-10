@@ -9,13 +9,14 @@ html,body{
 
 .form-select-control {
     position: absolute;
-    top:5%;
-    right:4%;
+    bottom:5%;
+    left:2%;
     z-index: 30;
     display: inline-block;
     cursor: pointer;
-    height: 34px;
-    padding: 6px 5px;
+    height: 40px;
+    width:120px;
+    padding: 10px 5px;
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 4px;
