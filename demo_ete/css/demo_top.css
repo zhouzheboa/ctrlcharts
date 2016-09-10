@@ -1,0 +1,38 @@
+body{
+	 background: linear-gradient(to right,#010314 , #090e32);
+}
+  #myhead{
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    z-index: 1000;
+	    color:#f1f1f1;
+	    line-height:50px;
+	    font-size:25px;
+		background: linear-gradient(to right,#010314 , #090e32);
+		height:50px;
+	}
+	  #myhead dl{
+	    overflow:hidden;
+	    width:1000px;
+	    margin:0 auto;
+	  }
+	  #myhead dl dt{
+	      float:left;
+	      height:50px;
+	      background:transparent url(../../demo/assets/images/dabai.gif) no-repeat 0px center;
+	      background-size:auto 100%;
+	      -webkit-background-size:auto 100%;
+	      text-align:left;
+	      text-indent:50px;
+	  }
+	   #myhead dl dd{
+	       float:right;
+	       font-size:18px;
+	   }
+	    @media only screen and (max-width: 640px){
+		  .form-select-control {
+		     top:0%;
+		     right:0%;
+		  }
+		}

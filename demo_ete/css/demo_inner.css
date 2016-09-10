@@ -1,0 +1,57 @@
+html{
+	height:100%;
+	overflow:hidden;
+}
+body {
+	overflow:hidden;
+	height:100%;
+    color: #95a3a6;
+    font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "å¾®è½¯é›…é»‘", Tahoma, Arial, sans-serif;
+    position: relative;
+    background: #2b4783 url(../images/config-bg.png) no-repeat;
+    background-attachment: fixed;
+}
+input{
+    border-width: 1px;
+    width: 100%;
+	color: #cbd0da;
+    background-color: #263145;
+    border: 1px solid #455064;
+    height: 18px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 18px;
+}
+#QRcodeDiv{
+	width:150px;
+}
+#QRcodeDiv img{
+	width:150px;
+	height:150px;
+	float:left;
+}
+#QRcodeDiv a{
+	float:left;
+}
+div.desc {
+	float:right;background-color:rgba(0,0,0,0.5);color:#3d466a;padding:0 5 0 5;
+}
+div.codeArea{
+	background: rgba(22,28,73,0.5 );
+}
+div.codeArea div:hover{
+	background:#24315e;
+	color:#f1f1f1 !important;
+}
+div.codeArea div.mouseover{
+	background:#24315e;
+	color:#f1f1f1 !important;
+}
+div.codeArea div.comment{
+	color:rgba(91,108,173,1)
+}
+div.codeArea div span{
+	padding-left:30px;
+	color:rgba(111,147,82,1)
+}
+

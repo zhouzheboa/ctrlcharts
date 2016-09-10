@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<script>
+			function setRightUrl(url){
+				//var rightframe = document.getElementById('rightDemo');
+				var d = document['rightFrame'];
+				if(top.rightFrame.location.href.indexOf('about:blank') >-1){
+					top.rightFrame.location.href=url;
+				}
+			}
+		</script>
+	</head>
+	
+		<frameset rows="50,*" cols="*" frameborder="no" border="0">
+		    <frame src="./pages/demo_top.html" id="topFrame" scrolling="no">
+		    <frameset cols="50%,*" id="bodyFrame"  frameborder="yes" border="4" bordercolor="#010314" >
+		        <frame id="leftFrame" src="./pages/demo_inner.html" name="leftFrame" id="menu" scrolling="auto" />
+		        <frame id="rightFrame" src="" name="rightFrame" id="main" scrolling="auto" />
+		    </frameset>
+		</frameset>
+	<body>
+	
+		
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<link href="../css/demo_inner.css" rel="stylesheet">
+		
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../../src/ete-0.1.1.js"></script>
+		
+	</head>
+	
+	<body onload="initBody();">
+		
+		<h1>当前页面地址</h1>
+		<input type="text" id="url" value="" />
+		
+		<h1>操作演示</h1>
+		<table style="width:100%;">
+			<tr>
+				<td>
+					我是checkbox
+					<input type="checkbox" checked="checked"/>
+				</td>
+				<td>
+					我是下拉
+					<select>
+						<option value="0">我是默认条件</option>
+						<option value="1">选项一</option>
+						<option value="2">选项二</option>
+						<option value="3">选项三</option>
+					</select>
+				</td>
+				<td>
+					我是radioA
+					<input name="radio" type="radio" />
+					我是radioB
+					<input name="radio" type="radio" />
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+		<h1>调用方式</h1>
+		<div class="codeArea">
+			<div class="comment">/**               															 	 		</div>
+			<div class="comment">&nbsp;&nbsp;&nbsp;&nbsp;@说明： 监听对页面 内元素及事件进行推送始终保持两界面操作一致               </div>
+			<div class="comment">&nbsp;&nbsp;&nbsp;&nbsp;@使用方式：引入 ete.js即可            							  		</div>
+			<div class="comment">&nbsp;&nbsp;&nbsp;&nbsp;@使用场景：远程控制、展厅、讲解等        					     		</div>
+			<div class="comment">&nbsp;&nbsp;&nbsp;&nbsp;@author zhougz3             							  		</div>
+			<div>**/  																						</div>
+			<div>&lt;script type="text/javascript" src="../ete-0.1.js"&gt;&lt;/script&gt;    				</div>
+			<div></div>								
+			<div>var ete = new ete({             												</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;autoLoad :true,            							</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;dom:'*',									 			<span>//要监听的dom元素表达式（与 jquery类似）  </span>      									  </div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;events:['click','mouseover','fockin'],    	 			<span>//要监听的事件 </span>             						  </div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;showQRcode :true,                   					<span>//是否展示手机二维码 </span> 			 			 </div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;showMessage:true,	               			 			<span>//是否展示遥控信息 </span> 						</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;wsServerUrl:  'ws://www.iyouwei.com.cn:8090/ete/wsServlet'   <span>//webscoket服务地址  </span>       					  </div>
+			<div>}); 
+			
+			<div class="desc">code area</div>            																	</div>
+		</div>
+		
+		<script type="text/javascript">
+				
+			/**
+				@说明： 监听对页面 ，元素及动作，始终保持两界面操作一致
+				@使用方式：引入 ete.js即可
+				@使用场景：远程控制、展厅、讲解等
+				@author zhougz3
+			**/
+			var ete = new ete({
+				autoLoad :true,
+				dom:'*', //								  				  //要监听的dom元素表达式（与 jquery类似）
+				events:['click','fockin','change','mouseover','mouseout'],    				  //要监听的事件
+				showQRcode :true,                         				  //是否展示手机二维码
+				showMessage:true,				  				  //是否展示遥控信息
+			});
+			ete.init();
+			//结束
+			
+			
+			if(top.setRightUrl){
+				top.setRightUrl(ete.getCtrlUrl());
+			}
+			
+			function initBody(){
+				var url = window.location.href;
+				var urlObj = window.document.getElementById('url');
+				urlObj.value = url;
+			}
+		</script>
+	</body>
+</html>

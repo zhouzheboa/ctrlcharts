@@ -1,0 +1,124 @@
+/*-----------------------------------------------------------------------------
+
+
+Screen Stylesheet
+
+version:   	1.0
+-----------------------------------------------------------------------------*/
+
+
+
+
+
+  /*********************************************************************************************
+  **********************************************************************************************/
+
+  /*	-	THE BANNER CONTAINER (Padding, Shadow, Border etc. )	-	*/
+
+  .bannercontainer {
+		background-color:#fff;
+		width:960px;
+		position:relative;
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+  .banner{
+		width:960px;
+		height:500px;
+		position:relative;
+		overflow:hidden;
+   }
+
+
+    .bannercontainer-simple {
+		padding:0px;
+		background-color:#fff;
+		width:960px;
+		position:relative;
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+  .banner-simple{
+		width:960px;
+		height:500px;
+		position:relative;
+		overflow:hidden;
+   }
+
+ .fullwidthbanner-container{
+	width:100% !important;
+	position:relative;
+	padding:0;
+	overflow:hidden;
+}
+
+.fullwidthbanner-container .fullwidthabnner	{
+	width:100% !important;
+	height:768px !important;
+	position:relative;
+	background: url("../../../../../images/config-bg.jpg") no-repeat left top; 
+    color: #95a3a6 !important;
+}
+.ui-font-size{
+	width: 800px !important;
+	word-break:break-all !important; 
+	word-wrap:break-word !important;
+	line-height: 60px;
+	font-size: 40px !important;
+}
+.ui-person-box{
+	width: 1000px;
+	height: 768px;
+}
+
+.fontSizeColor40{
+	font-size: 40px;
+	color: #94d7e4;
+}
+.fontSizeColor18{
+	font-size: 28px;
+	color: #fff;
+}
+.fontSizeColor16{
+	font-size: 18px !important;
+	color: #95a3a6 !important;
+}
+
+
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+ 		  .banner, .bannercontainer		,  .ui-person-box	{	width:760px; height:396px !important;}
+
+        
+
+
+   }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+		   .banner, .bannercontainer	,  .ui-person-box	{	width:480px; height:250px !important;	}
+
+
+
+
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 479px) {
+			.banner, .bannercontainer	,  .ui-person-box	{	width:320px;height:167px !important;	}
+
+
+
+
+   }
+
+  
+
+
+
+
+

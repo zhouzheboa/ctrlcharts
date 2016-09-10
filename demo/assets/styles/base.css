@@ -1,0 +1,348 @@
+/* reset */
+/* clear brower html attribute value */
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+fieldset,form {
+	border: 0;
+	display: block;
+}
+.font18{
+	font-size: 18px;
+}
+img {
+	vertical-align: top;
+	display: inline-block;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var,optgroup {
+	font-style: normal;
+	font-weight: normal;
+}
+
+abbr[title],acronym[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+hr {
+	border: none;
+	height: 1px;
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+input,button,textarea,select,optgroup,option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	outline: none;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}
+
+code,kbd,samp,tt {
+	font-size: 100%;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,button,textarea,select {
+	*font-size: 100%;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+li {
+	list-style-type: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+
+caption,th {
+	text-align: left;
+}
+
+sup,sub {
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* remember to highlight anchors and inserts somehow! */
+:link,:visited,ins {
+	text-decoration: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+button,input {
+	outline: none;
+	border: none;
+}
+
+a,input[type=button] {
+	cursor: pointer
+}
+
+i,em {
+	font-style: normal;
+}
+
+/*****************************************************
+    通用样式定义
+  *******************************************************/
+
+/* font size  text-align color  */
+.fB {
+	font-weight: bold;
+}
+
+.fN {
+	font-weight: normal;
+}
+
+.ellipsis-all {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.align_center {
+	text-align: center;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.cred {
+	color: #FC6B6D;
+}
+.chot-text{
+	color: #fd8a53;
+}
+/* font color */
+
+/* font size  text-align  end*/
+
+/* layout-style */
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	zoom: 1;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {height: 1%;}.clearfix {display: block;}
+
+.zoom {
+	zoom: 1
+}
+
+.v-hidden {
+	visibility: hidden
+}
+
+.inline {
+	display: inline-block;
+}
+
+.of-hidden {
+	overflow: hidden;
+}
+
+.none {
+	display: none
+}
+
+/* layout-style end*/
+
+/* width-height-style */
+.width455 {
+	width: 455px;
+}
+
+.width200 {
+	width: 200px;
+}
+/* width-height--style end*/
+
+/* 伪类-style */
+
+/* 伪类-style end*/
+
+/* border-style */
+
+/* border-style end*/
+
+/* margin-style */
+.tMargin20 {
+	margin-top: 20px !important;
+}
+
+.lMargin10 {
+	margin-left: 10px;
+}
+
+.lMargin10 {
+	margin-left: 10px;
+}
+
+.rMargin15 {
+	margin-right: 15px;
+}
+/* margin-style end*/
+
+/* padding-style */
+.pleft{
+	padding-left: 15px;
+}
+/* padding-style end*/
+
+/* input  style */
+.inputFmt70,.inputFmt125,.dateInput {
+	width: 125px;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	padding-left: 5px;
+}
+
+.dateInput {
+	background: #fff url(../images/icon_date.png) no-repeat right center;
+}
+
+.inputFmt70 {
+	width: 70px;
+}
+/* input  style end */
+
+/* label  style */
+.labelFmt90,.labelFmt {
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	width: 90px;
+	padding-right: 5px;
+	text-align: right;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.labelFmt {
+	width: auto;
+}
+/* label  style end */
+
+/* textarea  style */
+.textarea625_110 {
+	width: 625px;
+	height: 110px;
+	border: 1px solid #ebeff0;
+}
+/* textarea  style end */
+
+/* select  style  */
+.selectFmt {
+	height: 26px;
+	line-height: 24px;
+	border: 1px solid #d3d3d3;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color: #fafafa;
+}
+
+.comWidth {
+	width: 1248px;
+	margin: 0 auto;
+}
+
+.header {
+	background: #fff;
+}
+
+.header .comWidth {
+	height: 60px;
+}
+
+h1.logo {
+	float: left;
+	width: 160px;
+	height: 60px;
+	background: transparent url(../images/logos/logo.png) no-repeat left
+		center;
+	background-size: auto 43px;
+	-webkit-background-size: auto 43px;
+}
+
+h1.logo a {
+	display: block;
+	height: 60px;
+	text-indent: -999px;
+}
+.containerBox {
+	position: relative;
+}
+.ui-content{
+	width: 1160px;
+	margin: 0 auto;
+}
