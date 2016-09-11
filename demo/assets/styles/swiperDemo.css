@@ -103,6 +103,7 @@
     /* 第三屏 */
     .page3 ol li{
          height:45%;
+         text-align: center;
     }
     .page3 dl{
         text-align:left;
@@ -119,10 +120,11 @@
         padding-left:35px;
         line-height: 55px;
     }
-    .page3.swiper-slide-active li img{
-         width: 49.5%;
+    .page3 li img{
+         max-width: 49.5%;
          height: 100%;
     }
+  
     .page3.swiper-slide-active li:nth-child(2) img{
           animation:bounceInUp 4.5s;
           -webkit-animation:bounceInUp 4.5s;
@@ -213,6 +215,16 @@
     }
     .page5 dd.last{
         text-align:right;
+    }
+    .page5 li img{
+         max-width: 49.5%;
+         height: 100%;
+    }
+    .page5 li img:nth-of-type(1){
+      float:left;
+    }
+      .page5 li img:nth-of-type(2){
+      float:right;
     }
     .page5.swiper-slide-active li:nth-child(2) img{
           animation:bounceInUp 4.5s;
