@@ -35,6 +35,7 @@
     .page5 ol ,
     .page6 ol ,
     .page8 ol ,
+    .page9 ol ,
     .page7 ol {
         height: 100%;
         width: 90%;
@@ -47,7 +48,8 @@
     .page5 ol li,
     .page6 ol li,
     .page8 ol li,
-    .page7 ol li
+    .page7 ol li,
+    .page9 ol li
     {
         text-align: left;
         height: 33%;
@@ -300,4 +302,38 @@
           animation:bounceInLeft 3.5s ;
           -webkit-animation:bounceInLeft 3.5s ;
     } 
+    
+    /* 最后一屏幕 */
+    .page9 ol li{
+        color:#fff;
+       font-size:32px;
+       padding-left:20px;
+       margin-bottom:25px;
+       height:auto;
+    }
+    .page9 ol{
+       padding-top: 30%;
+    }
+     .page9 li:nth-of-type(4){
+        font-size:50px;
+        color:yellow;
+        font-weight:bold;
+        font-famliy:"微软雅黑";
+     }
+    .page9.swiper-slide-active li:nth-of-type(1){
+           animation:bounceInLeft 2s ;
+          -webkit-animation:bounceInLeft 2s ;
+    }
+    .page9.swiper-slide-active li:nth-of-type(2){
+           animation:bounceInRight 3.5s ;
+          -webkit-animation:bounceInRight 3.5s ;
+    }  
+     .page9.swiper-slide-active li:nth-of-type(3){
+           animation:bounceInLeft 4s ;
+          -webkit-animation:bounceInLeft 4s ;
+    }  
+     .page9.swiper-slide-active li:nth-of-type(4){
+           animation:bounceInDown 6s ;
+          -webkit-animation:bounceInDown 6s ;
+    }  
     
